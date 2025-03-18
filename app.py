@@ -1,6 +1,8 @@
 
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output, dash_table
+import os
+
 
 # Cargar datos
 df = pd.read_excel(
@@ -136,5 +138,6 @@ def mostrar_tablas(config, nivel, producto):
     return {'display': 'none'}, [], [], {'display': 'none'}
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 10000))  # Usa el puerto que proporciona Render
+    app.run(debug=False, host='0.0.0.0', port=port)
