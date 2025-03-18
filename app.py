@@ -1,5 +1,3 @@
-!pip install jupyter-dash
-
 
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output, dash_table
