@@ -4,7 +4,7 @@ from dash import Dash, dcc, html, Input, Output, dash_table
 
 # Cargar datos
 df = pd.read_excel(
-    "/content/assets/Condiciones Nivel de Automatización Producto y Feature_Actualizado_Perplexity.xlsx",
+    "Condiciones Nivel de Automatización Producto y Feature_Actualizado_Perplexity.xlsx",
     sheet_name="Condiciones Nivel de Automatiza"
 )
 
